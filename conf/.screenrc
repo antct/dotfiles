@@ -1,0 +1,56 @@
+# chinese encoding
+defencoding utf8
+encoding utf8 utf8
+
+# shell make .bashrc .profile /etc/profile alias
+shell -$SHELL
+
+# set the startup message
+startup_message off
+
+# term
+# term xterm
+# termcapinfo xterm|xterms|xs ti@:te=\E[2J
+
+# term 256
+attrcolor b ".I"
+defbce "on"
+# if no *
+termcapinfo xterm* 'is=\E[r\E[m\E[2J\E[H\E[?7h\E[?1;4;6l'
+termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
+term screen-256color
+
+# screen
+altscreen on
+
+# scroll
+defscrollback 5000
+
+# bottom labels
+#hardstatus on
+#caption always "%{= kw}%-w%{= kG}%{+b}[%n %t]%{-b}%{= kw}%+w %=%d %M %0c %{g}%H%{-}"
+hardstatus alwayslastline 
+hardstatus string '%{= .g}[%H][%= %{= .w}%?%-Lw%?%{=b .R}(%{W}%n*%f %t%?(%u)%?%{=b .R})%{= .w}%?%+Lw%?%?%=%{= .g}]%{= .Y}[%l]%{=b .C}[%m/%d %c]%{W}'
+# hardstatus string "%{= .w}%L=%-w%{= .G}%{+b}[%n %t]%{= .w}%{-b}%+w %=%l | %m/%d %02c:%s | %H"
+
+
+# close screen flash
+vbell off
+
+# keymap
+bindkey ^[h prev
+bindkey ^[l next
+
+bindkey "^[`" select 0
+bindkey "^[1" select 1
+bindkey "^[2" select 2
+bindkey "^[3" select 3
+bindkey "^[4" select 4
+bindkey "^[5" select 5
+bindkey "^[6" select 6
+bindkey "^[7" select 7
+bindkey "^[8" select 8
+bindkey "^[9" select 9
+bindkey "^[0" select 10
+bindkey "^[-" select 11
+bindkey "^[=" select 12
