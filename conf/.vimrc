@@ -67,7 +67,8 @@ Plug 'tmhedberg/SimpylFold'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'easymotion/vim-easymotion'
-Plug 'sheerun/vim-polyglot'
+" centos not support
+" Plug 'sheerun/vim-polyglot'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-fugitive'
 Plug 'scrooloose/nerdtree'
@@ -75,7 +76,7 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'majutsushi/tagbar'
 Plug 'kien/ctrlp.vim'
 Plug 'dyng/ctrlsf.vim'
-Plug 'wakatime/vim-wakatime'
+" Plug 'wakatime/vim-wakatime'
 " Plug 'davidhalter/jedi-vim'
 call plug#end()
 
