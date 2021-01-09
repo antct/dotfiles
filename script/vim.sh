@@ -1,5 +1,5 @@
 #/bin/bash
-#git clone https://github.com/vim/vim.git ~/vim
+git clone https://github.com/vim/vim.git ~/vim
 mkdir ~/vim82
 mkdir ~/vim82/etc
 mkdir ~/vim82/usr
