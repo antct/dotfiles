@@ -40,3 +40,5 @@ else
     git clone --quiet https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
     # git clone --quiet --recursive https://github.com/davidhalter/jedi-vim ~/.vim/plugged/jedi-vim
 fi
+
+touch ~/.hushlogin
