@@ -24,7 +24,7 @@ then
     PROXY=Y
     echo "PROXY: $PROXY"
     echo "PROXY URL: $PROXY_URL"
-    sh -c "$(wget -O- $PROXY_URL/https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+    sh -c "$(curl -fsSL $PROXY_URL/https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
     git clone --quiet $PROXY_URL/https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
     git clone --quiet $PROXY_URL/https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
     curl -fLo ~/.vim/autoload/plug.vim --create-dirs $PROXY_URL/https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -33,7 +33,7 @@ then
 else
     PROXY=N
     echo "PROXY: $PROXY"
-    sh -c "$(wget -O- https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
     git clone --quiet https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
     git clone --quiet https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
     curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -42,3 +42,10 @@ else
 fi
 
 touch ~/.hushlogin
+
+cp -r ~/dotfiles/bin/.ctags ~
+cp ~/dotfiles/conf/.vimrc ~
+cp ~/dotfiles/conf/.tmux.conf ~
+cp ~/dotfiles/conf/.zshrc ~
+cp ~/dotfiles/conf/.zshrc.conf ~
+cp ~/dotfiles/custom/.oh-my-zsh/themes/ysplus.zsh-theme ~/.oh-my-zsh/custom/themes/
