@@ -12,4 +12,6 @@ A material-design-style theme [papercolor](https://github.com/NLKNguyen/papercol
 
 ## Install
 
-Refer to `script`, `bin`, `conf` and `custom`.
+```bash
+bash script/install.sh
+```
