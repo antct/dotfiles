@@ -12,7 +12,7 @@ then
     sudo yum install -y ack
     sudo yum install -y the_silver_searcher
 else
-	OS=UBUNTU
+    OS=UBUNTU
     echo "OS VERSION: $OS"
     sudo apt-get install -y -qq zsh
     sudo apt-get install -y -qq ack-grep
