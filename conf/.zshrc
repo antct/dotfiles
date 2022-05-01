@@ -83,6 +83,12 @@ precmd() {
     }
 }
 
+# iterm tab title
+DISABLE_AUTO_TITLE="true"
+precmd() {
+  echo -ne "\e]1;$(whoami)@$(hostname)\a"
+}
+
 # venv
 export VIRTUAL_ENV_DISABLE_PROMPT=true
 
