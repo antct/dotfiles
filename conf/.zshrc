@@ -76,17 +76,13 @@ ZSH_DISABLE_COMPFIX=true
 # autojump
 # [[ -s ~/.autojump/etc/profile.d/autojump.sh  ]] && . ~/.autojump/etc/profile.d/autojump.sh
 
-# first line
+# first line & iterm tab title
+DISABLE_AUTO_TITLE="true"
 precmd() {
     precmd() {
         echo
+        echo -ne "\e]1;$(whoami)@$(hostname)\a"
     }
-}
-
-# iterm tab title
-DISABLE_AUTO_TITLE="true"
-precmd() {
-  echo -ne "\e]1;$(whoami)@$(hostname)\a"
 }
 
 # venv
