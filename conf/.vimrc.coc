@@ -334,7 +334,7 @@ let g:indentLine_enabled=1
 " ctrlp
 let g:ctrlp_custom_ignore='\v[\/]\.(git|hg|svn)$'
 " <Leader>f MRU
-nnoremap <Leader>f :CtrlPMRUFiles<CR>
+" nnoremap <Leader>f :CtrlPMRUFiles<CR>
 " <Leader>b BUFFER
 nnoremap <Leader>b :CtrlPBuffer<CR>
 let g:ctrlp_working_path_mode=0
