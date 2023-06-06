@@ -3,5 +3,8 @@
     "python.linting.flake8Enabled": true,
     "python.linting.enabled": true,
     "python.formatting.autopep8Args": ["--max-line-length=999"],
-    "python.pythonPath": ""
+    "python.pythonPath": "$HOME/miniconda3/bin/python",
+    "suggest.enablePreselect": false,
+    "suggest.noselect": true,
+    "inlayHint.enable": false
 }
