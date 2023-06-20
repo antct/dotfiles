@@ -83,13 +83,13 @@ call plug#end()
 
 " vim theme papercolor
 set background=dark
-let g:PaperColor_Theme_Options={
-\   'theme': {
-\     'default': {
-\       'transparent_background': 1
-\     }
-\   }
-\ }
+" let g:PaperColor_Theme_Options={
+" \   'theme': {
+" \     'default': {
+" \       'transparent_background': 1
+" \     }
+" \   }
+" \ }
 " colorscheme PaperColor
 colorscheme onedark
 
@@ -100,7 +100,7 @@ set noshowmode
 "       \ 'colorscheme': 'PaperColor',
 "       \ }
 let g:lightline = {
-      \ 'colorscheme': 'one',
+      \ 'colorscheme': 'onedark',
       \ }
 
 " tab keymap
