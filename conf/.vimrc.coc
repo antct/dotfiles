@@ -71,6 +71,7 @@ autocmd! bufwritepost .vimrc source %"
 set nocompatible
 call plug#begin('~/.vim/plugged')
 Plug 'NLKNguyen/papercolor-theme'
+Plug 'joshdick/onedark.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'mhinz/vim-startify'
 Plug 'Yggdroot/indentLine'
@@ -95,20 +96,24 @@ call plug#end()
 
 " vim theme papercolor
 set background=dark
-let g:PaperColor_Theme_Options={
-\   'theme': {
-\     'default': {
-\       'transparent_background': 1
-\     }
-\   }
-\ }
-colorscheme PaperColor
+" let g:PaperColor_Theme_Options={
+" \   'theme': {
+" \     'default': {
+" \       'transparent_background': 1
+" \     }
+" \   }
+" \ }
+" colorscheme PaperColor
+colorscheme onedark
 
 " lightline
 set laststatus=2
 set noshowmode
+" let g:lightline = {
+"       \ 'colorscheme': 'PaperColor',
+"       \ }
 let g:lightline = {
-      \ 'colorscheme': 'PaperColor',
+      \ 'colorscheme': 'onedark',
       \ }
 
 " rainbow
@@ -353,7 +358,7 @@ endif
 nnoremap <C-f> :CtrlSF<Space>
 let g:ctrlsf_default_view_mode='compact'
 
-" nerdtree 
+" nerdtree
 " \nt toggle nerdtree
 nnoremap <LEADER>nt :NERDTreeToggle<CR>
 let g:NERDTreeWinPos='left'
