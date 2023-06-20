@@ -60,6 +60,7 @@ autocmd! bufwritepost .vimrc source %"
 set nocompatible
 call plug#begin('~/.vim/plugged')
 Plug 'NLKNguyen/papercolor-theme'
+Plug 'joshdick/onedark.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'mhinz/vim-startify'
 Plug 'Yggdroot/indentLine'
@@ -89,13 +90,17 @@ let g:PaperColor_Theme_Options={
 \     }
 \   }
 \ }
-colorscheme PaperColor
+" colorscheme PaperColor
+colorscheme onedark
 
 " lightline
 set laststatus=2
 set noshowmode
+" let g:lightline = {
+"       \ 'colorscheme': 'PaperColor',
+"       \ }
 let g:lightline = {
-      \ 'colorscheme': 'PaperColor',
+      \ 'colorscheme': 'one',
       \ }
 
 " tab keymap
@@ -187,7 +192,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 " autocmd vimenter * NERDTree
 
 "nerdtree-git-plugin
-let g:NERDTreeIndicatorMapCustom = {
+let g:NERDTreeGitStatusIndicatorMapCustom = {
             \ "Modified"  : "✹",
             \ "Staged"    : "✚",
             \ "Untracked" : "✭",
