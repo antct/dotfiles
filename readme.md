@@ -8,7 +8,7 @@ A material-design-style theme [papercolor](https://github.com/NLKNguyen/papercol
 
 ## Preview
 
-![](./preview/screenshot.png)
+![](./preview/papercolor.png)
 
 ## Install
 
