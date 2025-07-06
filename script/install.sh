@@ -4,7 +4,7 @@
 OS=ubuntu
 ROOT=Y
 PROXY=Y
-PROXY_URL=https://ghproxy.com
+PROXY_URL=https://gh-proxy.com
 
 # root
 if [[ $ROOT = 'Y' ]]
